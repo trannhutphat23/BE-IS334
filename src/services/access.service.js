@@ -415,7 +415,7 @@ class AccessService {
         }
     }
 
-    static getCustomers = async () => {
+    static getUsers = async () => {
         try {
             const customers = await CustomerModel.find({})
             const orders = await ordersModel.find({}).populate('user')

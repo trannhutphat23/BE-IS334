@@ -65,9 +65,9 @@ class AccessController {
         }
     }
 
-    getCustomers = async (req, res , next) => {
+    getUsers = async (req, res , next) => {
         try {
-            return res.status(201).json(await AccessService.getCustomers())
+            return res.status(201).json(await AccessService.getUsers())
         } catch (error) {
             next(error)
         }

@@ -70,7 +70,7 @@ router.post('/carts', CartController.addCart)
 router.get('/carts/:id', CartController.getCart)
 router.delete('/carts/:itemId', CartController.deleteCart)
 
-//adim
-router.get('/customers', AccessController.getCustomers)
+//admin
+router.get('/users', AccessController.getUsers)
 
 module.exports = router
